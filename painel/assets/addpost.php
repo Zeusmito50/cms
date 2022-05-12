@@ -3,7 +3,7 @@
 if (file_exists("../inc/config.php")){
     require_once "../inc/config.php";
 } else {
-    die("Erro: Arquivo config.php nao localizado");
+    die("Erro: Arquivo config.php nao foi localizado");
 }   
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
