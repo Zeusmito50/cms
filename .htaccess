@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+Options All -Indexes
+DirectoryIndex index.php
+ErrorDocument 403 /nothing.html
+
+RewriteRule ^([_a-zA-Z0-9-+]+)/?$ /post.php?l=$1 [NC,L]

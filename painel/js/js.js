@@ -1,0 +1,1 @@
+function loginLink(){    window.location.href = "index.php";}function registerLink(){	window.location.href = "register.php";}
